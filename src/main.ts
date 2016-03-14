@@ -1,5 +1,6 @@
-import 'foundation';
 import {Aurelia} from 'aurelia-framework';
+import 'uikit';
+
 
 export function configure(aurelia: Aurelia) {
   aurelia.use

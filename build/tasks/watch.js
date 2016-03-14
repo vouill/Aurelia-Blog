@@ -15,6 +15,7 @@ gulp.task('watch', ['serve'], function() {
   gulp.watch(paths.source, ['build-system', browserSync.reload]).on('change', reportChange);
   gulp.watch(paths.js, ['copy-js', browserSync.reload]).on('change', reportChange);
   gulp.watch(paths.fonts, ['copy-fonts', browserSync.reload]).on('change', reportChange);
+  gulp.watch(paths.sass, ['build-sass', browserSync.reload]).on('change', reportChange);
   gulp.watch(paths.html, ['build-html', browserSync.reload]).on('change', reportChange);
   gulp.watch(paths.css, ['build-css', browserSync.reload]).on('change', reportChange);
   gulp.watch(paths.jade, ['build-jade', browserSync.reload]).on('change', reportChange);

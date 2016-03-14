@@ -10,6 +10,7 @@ module.exports = {
   jade: appRoot + '**/*.jade',
   fonts: appRoot+ '**/*.{ttf,woff,eof,svg}',
   css: appRoot + '**/*.css',
+  sass: appRoot + '**/*.scss',
   style: 'styles/**/*.css',
   output: outputRoot,
   exportSrv: exporSrvtRoot,

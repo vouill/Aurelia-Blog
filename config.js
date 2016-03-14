@@ -29,6 +29,7 @@ System.config({
     "foundation": "npm:foundation-sites@6.2.0",
     "jquery": "npm:jquery@2.2.1",
     "text": "github:systemjs/plugin-text@0.0.3",
+    "uikit": "github:uikit/uikit@2.25.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

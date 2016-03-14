@@ -8,6 +8,7 @@ var assign = Object.assign || require('object.assign');
 var notify = require("gulp-notify");
 var typescript = require('gulp-tsb');
 var jade = require('gulp-jade');
+var sass = require('gulp-sass');
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -48,6 +49,12 @@ gulp.task('build-css', function() {
     .pipe(gulp.dest(paths.output));
 });
 
+gulp.task('build-sass', function () {
+  return gulp.src(paths.sass)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(paths.output));
+});
+
 //usefull for  short web framework
 gulp.task('copy-fonts', function() {
    gulp.src(paths.fonts)
@@ -67,7 +74,7 @@ gulp.task('copy-js', function() {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-system','copy-fonts','copy-js', 'build-html', 'build-css','build-jade'],
+    ['build-system','copy-fonts','copy-js', 'build-html', 'build-css','build-jade','build-sass'],
     callback
   );
 });
