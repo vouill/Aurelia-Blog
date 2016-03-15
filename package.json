@@ -60,6 +60,7 @@
   },
   "jspm": {
     "dependencies": {
+      "Dogfalo/materialize": "github:Dogfalo/materialize@^0.97.5",
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1.1.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.1",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.1.0",
@@ -84,6 +85,25 @@
     "overrides": {
       "npm:core-js@2.0.3": {
         "main": "client/shim.min"
+      },
+      "github:Dogfalo/materialize@0.97.0": {
+        "files": [
+          "dist"
+        ],
+        "main": "dist/js/materialize",
+        "shim": {
+          "dist/js/materialize": {
+            "deps": [
+              "jquery",
+              "../css/materialize.css!"
+            ],
+            "exports": "$"
+          }
+        },
+        "dependencies": {
+          "jquery": "github:components/jquery",
+          "css": "github:systemjs/plugin-css"
+        }
       }
     }
   }

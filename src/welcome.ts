@@ -3,6 +3,7 @@ import {inject} from "aurelia-framework";
 import {globalRes} from 'resources/globalRes';
 
 
+
 @inject(globalRes)
 export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';

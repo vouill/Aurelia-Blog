@@ -1,3 +1,6 @@
 template(bindable='router')
 	nav
-		p stuff nav
+		ul.inline-list
+			li(repeat.for="row of router.navigation")
+				a ${row.title}
+
