@@ -15,7 +15,7 @@ export class prevArticleBuilder {
 
 
 	
-	getPreview(startNb: number, endNb: number){
+	getPreview(startNb?: number, endNb?: number){
 		console.log("getpreview called");
 
 		return this.http.fetch('posts')

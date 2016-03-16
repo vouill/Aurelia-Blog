@@ -1,7 +1,10 @@
 
 template
 
-	p(repeat.for="post of prevArticles") titles : ${post.title}
+	div.card-panel.blue-grey.lighten-5(repeat.for="post of prevArticles") 
+		h4 ${post.title}
+		p ${post.body}
+		a.btn Stuff
 
 
 		

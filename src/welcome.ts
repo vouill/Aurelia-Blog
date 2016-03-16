@@ -7,11 +7,17 @@ export class Welcome {
   prevArticles: Array<Object> = [];
 
   constructor() {
-    var preview = new prevArticleBuilder();
-    preview.getPreview(0, 5)
-      .then(response => this.prevArticles=response);
+
+    this.loadPreviews();
+    
   }
 
+  loadPreviews(){
+    var preview = new prevArticleBuilder();
+    preview.getPreview()
+      .then(response => this.prevArticles = response);
+
+  }
   bind(){
   }
 
