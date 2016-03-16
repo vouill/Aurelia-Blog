@@ -1,15 +1,10 @@
 
-
 import {Aurelia} from 'aurelia-framework';
 
-
-
-
-export function configure(aurelia) {
+export function configure(aurelia: Aurelia) {
 	aurelia.use
 		.standardConfiguration()
-		.developmentLogging()
-		.plugin('aurelia-animator-css');
+		.developmentLogging();
 
 	//Uncomment the line below to enable animation.
 	//aurelia.use.plugin('aurelia-animator-css');
