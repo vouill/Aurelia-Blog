@@ -1,0 +1,16 @@
+body { @include container(40em); }
+nav { @include span(100%); }
+
+
+html {
+	background-color:#FAFAFA;
+    body {
+        nav{
+        	
+        }
+    }
+}
+
+li{
+	list-style-type: none;
+}

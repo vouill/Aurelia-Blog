@@ -1,18 +1,13 @@
 @import "sass/susy";
 @import "sass/fonts";
-@import "sass/components/preloader";
-body { @include container(40em); }
-nav { @include span(100%); }
+
+@import "sass/base";
+@import "sass/nav";
 
 
-html {
-	background-color:#FAFAFA;
-    body {
-        nav{
-        	
-        }
-    }
-}
+
+
+
 
 
 .pre{
