@@ -21,5 +21,10 @@ export class Welcome {
   bind(){
   }
 
+  log(input:string){
+    console.log("logged : "+JSON.stringify(input));
+    return;
+  }
+
 }
 

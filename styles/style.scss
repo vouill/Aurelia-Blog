@@ -1,0 +1,40 @@
+@import "sass/susy";
+@import "sass/fonts";
+@import "sass/components/preloader";
+body { @include container(40em); }
+nav { @include span(100%); }
+
+
+html {
+	background-color:#FAFAFA;
+    body {
+        nav{
+        	
+        }
+    }
+}
+
+
+.pre{
+	.preHeader{
+		img{
+			display:block;
+			margin-bottom:-1.5em;
+			width: 100%;
+			height: auto;
+		}
+		.preHeaderTitle{
+			position: relative;
+			color:white;
+			bottom: 1em;
+			left:1em;
+		}
+	}
+	.preContent{
+		h1{
+			margin-top:0em;
+		}
+		margin-bottom: 3em;
+	}
+}
+

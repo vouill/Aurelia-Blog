@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Goudy;
+    src: url(font/Goudy-Bookletter-1911/goudy-bookletter-1911.otf);
+}
+
+
+h1{
+	font-family: Goody;
+		color:#333333;
+	font-weight: 400;
+	letter-spacing: -0.03em;
+	text-align: center;
+	font-size:200%;
+
+	line-height: 48px;
+  margin: 24px 0;
+}
+p{
+	font-family: Goody;
+	color:#333333;
+	font-size:120%;
+	line-height: 24px;
+  margin: 24px 0;
+}
+
+.preHeaderTitle{
+	color:white;
+	font-size: 180%;
+}

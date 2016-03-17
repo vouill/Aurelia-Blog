@@ -1,10 +1,12 @@
 
 template
 
-	div.card-panel.blue-grey.lighten-5(repeat.for="post of prevArticles") 
-		h4 ${post.title}
-		p ${post.body}
-		a.btn Stuff
 
+	div.pre(repeat.for="post of prevArticles") 
+		div.preHeader
+			img(src="http://www.snut.fr/wp-content/uploads/2015/07/image-de-la-nature-5.jpg")
+			span.preHeaderTitle Hello World
+		div.preContent
+			h1 ${post.title}
+			p ${post.body}
 
-		
