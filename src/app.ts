@@ -8,10 +8,11 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router) {
     config.title = 'Aurelia';
     config.map([
-      { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },
-      { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'Github Users' },
-      { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'Child Router' },
-      { route: 'hello', name: 'hello', moduleId: 'hello', nav: true, title: 'Hello Router' }
+      { route: ['', 'home'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Home' },
+      { route: 'about',         name: 'about',        moduleId: 'about',        nav: true, title: 'About' },
+      { route: 'front', name: 'front', moduleId: 'front', nav: true, title: 'Front' },
+      { route: 'back', name: 'back', moduleId: 'back', nav: true, title: 'Back' },
+      { route: 'article/:id', name: 'article', moduleId: 'article', nav: false, title: 'article' }
     ]);
 
     this.router = router;

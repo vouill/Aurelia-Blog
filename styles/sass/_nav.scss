@@ -6,4 +6,28 @@ nav{
 			margin-right: 2em;
 		}
 	}
+	a{
+	font-family: Roboto;
+	text-decoration: none;
+
+	/* unvisited link */
+	&:link {
+		color: red;
+	}
+
+	/* visited link */
+	&:visited {
+		color: green;
+	}
+
+	/* mouse over link */
+	&:hover {
+		color: hotpink;
+	}
+
+	/* selected link */
+	&:active {
+		color: blue;
+	}
+}
 }

@@ -1,11 +1,25 @@
 @import "sass/susy";
-@import "sass/fonts";
+@import "sass/components/mixins";
+@import "sass/components/color";
 
+// Variables;
+@import "sass/components/variables";
+
+// Reset
+@import "sass/components/normalize";
+
+@import "sass/components/buttons";
+@import "../node_modules/typi/scss/_typi";
+
+
+@import "sass/fonts";//typi init
 @import "sass/base";
 @import "sass/nav";
 
 
-
+html {
+  @include typi-base();
+}
 
 
 

@@ -21,4 +21,9 @@ export class prevArticleBuilder {
 		return this.http.fetch('posts')
 			.then(response => response.json());
 	}
+	getArticle(id:string){
+		return this.http.fetch('posts/' + id)
+			.then(response => response.json())
+
+	}
 }
