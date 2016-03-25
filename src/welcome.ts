@@ -2,6 +2,7 @@
 import {prevArticleBuilder} from "apiCalls";
 import {autoinject} from 'aurelia-framework';
 
+
 @autoinject
 export class Welcome {
   prevArticles: Array<Object> = [];
@@ -18,7 +19,7 @@ export class Welcome {
       .then(response => this.prevArticles = response);
 
   }
-  bind(){
+  bind(){ 
   }
 
   log(input:string){

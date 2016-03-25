@@ -12,22 +12,22 @@ nav{
 
 	/* unvisited link */
 	&:link {
-		color: red;
+		color:#4971A3;
 	}
 
 	/* visited link */
 	&:visited {
-		color: green;
+		color:#4971A3;
 	}
 
 	/* mouse over link */
 	&:hover {
-		color: hotpink;
+		color: #314C73;
 	}
 
 	/* selected link */
 	&:active {
-		color: blue;
+		color: #314C73;
 	}
 }
 }

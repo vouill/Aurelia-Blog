@@ -8,7 +8,6 @@ System.config({
   },
 
   map: {
-    "Dogfalo/materialize": "github:Dogfalo/materialize@0.97.5",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.1.2",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.1.4",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.1.1",
@@ -29,12 +28,9 @@ System.config({
     "font-awesome": "npm:font-awesome@4.5.0",
     "foundation": "npm:foundation-sites@6.2.0",
     "jquery": "npm:jquery@2.2.1",
+    "moment": "npm:moment@2.12.0",
     "text": "github:systemjs/plugin-text@0.0.3",
     "uikit": "github:uikit/uikit@2.25.0",
-    "github:Dogfalo/materialize@0.97.5": {
-      "css": "github:systemjs/plugin-css@0.1.20",
-      "jquery": "github:components/jquery@2.2.1"
-    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -399,6 +395,9 @@ System.config({
       "read-pkg-up": "npm:read-pkg-up@1.0.1",
       "redent": "npm:redent@1.0.0",
       "trim-newlines": "npm:trim-newlines@1.0.0"
+    },
+    "npm:moment@2.12.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:multipipe@0.1.2": {
       "duplexer2": "npm:duplexer2@0.0.2",

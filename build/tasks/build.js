@@ -55,7 +55,7 @@ gulp.task('build-sass', function () {
     .pipe(gulp.dest(paths.output));
 });
 
-//usefull for  short web framework
+//usefull for web framework
 gulp.task('copy-fonts', function() {
    gulp.src(paths.fonts)
    .pipe(gulp.dest(paths.output));

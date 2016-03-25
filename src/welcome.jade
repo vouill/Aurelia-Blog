@@ -1,14 +1,14 @@
 
 template
-
-
+	require(from="./date-format")
 	div.pre(repeat.for="post of prevArticles") 
 		div.preHeader
 			//img(src="http://www.snut.fr/wp-content/uploads/2015/07/image-de-la-nature-5.jpg")
 			//cdspan.preHeaderTitle Hello World
 		div.preContent
 			h1 ${post.title}
-			p ${post.body}
-
-			a(route-href="route: article; params.bind: {id:post.id}").waves-effect.waves-light.btn button
+			p ${post.content}
+			p ${post.createdAt | dateFormat}
+			div.preButton
+				a.btn(route-href="route: article; params.bind: {id:post.id}") Read More
 

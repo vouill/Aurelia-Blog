@@ -1,49 +1,47 @@
-@import "sass/susy";
-@import "sass/components/mixins";
-@import "sass/components/color";
-
-// Variables;
-@import "sass/components/variables";
-
-// Reset
-@import "sass/components/normalize";
-
-@import "sass/components/buttons";
-@import "../node_modules/typi/scss/_typi";
+@import 'sass/const';
+@import '../node_modules/typi/scss/_typi';
+@import 'sass/customMixins';
+@import 'sass/fonts';//typi init
+@import 'sass/base';
+@import 'sass/nav';
 
 
-@import "sass/fonts";//typi init
-@import "sass/base";
-@import "sass/nav";
 
 
-html {
-  @include typi-base();
+
+.pre
+{
+    .preHeader
+    {
+        img
+        {
+            display: block;
+
+            width: 100%;
+            height: auto;
+            margin-bottom: -1.5em;
+        }
+        .preHeaderTitle
+        {
+            position: relative;
+            bottom: 1em;
+            left: 1em;
+
+            color: white;
+        }
+    }
+    .preContent
+    {
+        margin-bottom: 3em;
+        h1
+        {
+            margin-top: 0;
+            text-align: left;
+            color: #b04a46;
+        }
+        .preButton
+        {
+            text-align: right;
+        }
+    }
 }
-
-
-
-
-.pre{
-	.preHeader{
-		img{
-			display:block;
-			margin-bottom:-1.5em;
-			width: 100%;
-			height: auto;
-		}
-		.preHeaderTitle{
-			position: relative;
-			color:white;
-			bottom: 1em;
-			left:1em;
-		}
-	}
-	.preContent{
-		h1{
-			margin-top:0em;
-		}
-		margin-bottom: 3em;
-	}
-}
-
