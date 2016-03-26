@@ -45,3 +45,24 @@
         }
     }
 }
+
+.adminEdit{
+    .editTitle{
+        font-family: Roboto;
+        color: #b04a46;
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .editContent{
+        font-family: Aleo;
+        color:$font-primary-color;
+        font-size:105%;
+        letter-spacing: 0.3px;
+    }
+    textarea{
+         outline: none;
+         width:100%;
+         resize: none;
+         border:none;
+    }
+}

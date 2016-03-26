@@ -15,7 +15,7 @@ export class Welcome {
 
   loadPreviews(){
     var preview = new prevArticleBuilder();
-    preview.getPreview()
+    preview.getPreviewList(5,0)
       .then(response => this.prevArticles = response);
 
   }

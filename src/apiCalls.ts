@@ -14,12 +14,9 @@ export class prevArticleBuilder {
 		});
 	}
 
-
-	
-	getPreview(startNb?: number, endNb?: number){
-		console.log("getpreview called");
-
-		return this.http.fetch('articles')
+	// get limit of preview while skipping skip number of prev
+	getPreviewList( limit: number,skip: number,){
+		return this.http.fetch(`prevArticles?filter[order]=createdAt%20DESC&filter[limit]=${limit}&filter[skip]=${skip}`)
 			.then(response => response.json());
 	}
 	getArticle(id:string){
@@ -28,10 +25,18 @@ export class prevArticleBuilder {
 
 	}
 	 postArticle(article) {
-        this.http.fetch('articles', {
+        return this.http.fetch('articles', {
             method: 'post',
             body: json(article)
         })
-        .then(response=>{ console.log(response);})
+        .then(response => response.json());
+    }
+
+    postPrevArticle(prev){
+    	return this.http.fetch('prevArticles', {
+            method: 'post',
+            body: json(prev)
+        })
+        .then(response => response.json());
     }
 }

@@ -1,20 +1,8 @@
 template
-	h1 Post an article :
-	form(submit.trigger='submit()')
-		div
-			label Title
-			input(type='text', value.bind='title')
-		div
-			label Content
-			input(type='text', value.bind='content')
-
+	h1 Post an article 
+	form.adminEdit(submit.trigger='submit()')
+		textarea.editTitle(placeholder="Title" rows="1" value.bind='art.title')
+		textarea.editContent(placeholder="Content" rows="4"  value.bind='art.content')
 
 		button(type='submit') Submit
 
-	div.pre
-		div.preHeader
-			//img(src="http://www.snut.fr/wp-content/uploads/2015/07/image-de-la-nature-5.jpg")
-			//cdspan.preHeaderTitle Hello World
-		div.preContent		
-			h1 ${title}
-			p ${content}

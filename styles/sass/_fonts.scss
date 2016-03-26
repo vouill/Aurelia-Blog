@@ -30,13 +30,20 @@ $typi: (
 
 h1{
 	font-family: Roboto;
-	color:#333333;
+	color:$font-primary-color;
 	font-weight: 400;
 	text-align: center;
 }
+
+h2{
+	font-family: Roboto;
+	color:$font-primary-color;
+	font-weight: 400;
+	text-align: left;
+}
 p{
 	font-family: Aleo;
-	color:#333333;
+	color:$font-primary-color;
 	font-size:105%;
 	letter-spacing: 0.3px;
 }
@@ -47,3 +54,5 @@ p{
 	color:white;
 	font-size: 180%;
 }
+
+

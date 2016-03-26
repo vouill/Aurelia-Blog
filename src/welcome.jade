@@ -10,5 +10,5 @@ template
 			p ${post.content}
 			p ${post.createdAt | dateFormat}
 			div.preButton
-				a.btn(route-href="route: article; params.bind: {id:post.id}") Read More
+				a.btn(route-href="route: article; params.bind: {id:post.articleId}") Read More
 
