@@ -1,3 +1,6 @@
+Simple blog using a strongloop app as backend.Developed while learning Aurelia and TS
+
+
 # aurelia-skeleton-navigation
 
 [![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)
